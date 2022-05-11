@@ -1,0 +1,297 @@
+
+ff: parsing domain file
+domain 'ATC' defined
+ ... done.
+ff: parsing problem file
+problem 'ATC-PROBLEM' defined
+ ... done.
+
+
+translating negated cond for predicate PLANELANDED
+warning: numeric precondition. turning cost-minimizing relaxed plans OFF.
+
+ff: search configuration is Enforced Hill-Climbing, then A*epsilon with weight 5.
+Metric is ((1.00*[RF2](TIME)) - () + 0.00)
+COST MINIMIZATION DONE (WITHOUT cost-minimizing relaxed plans).
+
+Cueing down from goal distance:  108 into depth [1]
+                                 107            [1]
+                                 106            [1][2]
+                                 104            [1]
+                                 103            [1][2]
+                                 102            [1]
+                                 101            [1][2]
+                                 100            [1]
+                                  99            [1][2][3]
+                                  98            [1]
+                                  97            [1]
+                                  96            [1]
+                                  95            [1][2]
+                                  94            [1]
+                                  93            [1]
+                                  92            [1]
+                                  91            [1]
+                                  90            [1][2]
+                                  89            [1]
+                                  87            [1][2]
+                                  86            [1]
+                                  85            [1]
+                                  83            [1][2]
+                                  82            [1][2]
+                                  75            [1][2][3][4]
+                                  74            [1]
+                                  72            [1][2]
+                                  71            [1][2]
+                                  70            [1]
+                                  69            [1]
+                                  67            [1][2]
+                                  66            [1][2]
+                                  65            [1]
+                                  63            [1]
+                                  62            [1][2]
+                                  61            [1][2]
+                                  60            [1]
+                                  58            [1]
+                                  57            [1][2]
+                                  56            [1][2][3][4]
+                                  54            [1][2]
+                                  53            [1][2][3][4]
+                                  51            [1][2]
+                                  50            [1][2][3][4]
+                                  49            [1]
+                                  47            [1][2][3]
+                                  46            [1]
+                                  45            [1]
+                                  43            [1]
+                                  42            [1]
+                                  41            [1][2]
+                                  40            [1]
+                                  39            [1][2]
+                                  38            [1]
+                                  37            [1][2]
+                                  36            [1][2][3]
+                                  34            [1]
+                                  33            [1][2][3]
+                                  32            [1][2]
+                                  30            [1]
+                                  29            [1][2][3][4]
+                                  28            [1]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1]
+                                  24            [1][2][3]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1][2][3][4]
+                                  18            [1]
+                                  17            [1][2]
+                                  16            [1][2][3][4]
+                                  15            [1][2]
+                                  14            [1][2][3][4]
+                                  13            [1][2]
+                                  11            [1][2][3][4]
+                                  10            [1][2][3][4][5][6]
+                                   9            [1][2][3][4][5][6]
+                                   8            [1][2]
+                                   7            [1][2][3][4]
+                                   6            [1][2][3][4][5][6]
+                                   5            [1][2][3][4][5][6]
+                                   4            [1][2][3][4][5][6]
+                                   3            [1][2]
+                                   2            [1][2][3][4]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+step    0: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+        1: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+        2: DOWN-TRAVEL-WITH-SPEED BOEING777
+        3: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+        4: DOWN-TRAVEL-WITH-SPEED BOEING737
+        5: RESET-COUNTER BOEING737
+        6: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+        7: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+        8: DOWN-TRAVEL-WITH-SPEED BOEING777
+        9: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       10: DOWN-TRAVEL-WITH-SPEED BOEING737
+       11: RESET-COUNTER BOEING737
+       12: DOWN-TRAVEL-WITH-SPEED BOEING787
+       13: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       14: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       15: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       16: DOWN-TRAVEL-WITH-SPEED BOEING737
+       17: RESET-COUNTER BOEING737
+       18: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       19: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       20: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       21: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       22: DOWN-TRAVEL-WITH-SPEED BOEING737
+       23: RESET-COUNTER BOEING737
+       24: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       25: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       26: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+       27: DOWN-TRAVEL-NO-SPEED AIRBUSA320
+       28: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       29: RESET-COUNTER BOEING737
+       30: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       31: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+       32: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       33: FAST-DOWN-TRAVEL-INC-SPEED BOEING737
+       34: DOWN-TRAVEL-WITH-SPEED BOEING737
+       35: RESET-COUNTER BOEING737
+       36: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+       37: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA320
+       38: DOWN-TRAVEL-WITH-SPEED BOEING777
+       39: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       40: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       41: RESET-COUNTER BOEING737
+       42: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       43: DOWN-TRAVEL-NO-SPEED AIRBUSA330
+       44: DOWN-TRAVEL-WITH-SPEED BOEING777
+       45: DOWN-TRAVEL-NO-SPEED AIRBUSA320
+       46: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       47: RESET-COUNTER BOEING737
+       48: DOWN-TRAVEL-WITH-SPEED BOEING787
+       49: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       50: DOWN-TRAVEL-WITH-SPEED BOEING777
+       51: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       52: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       53: RESET-COUNTER BOEING737
+       54: DOWN-TRAVEL-WITH-SPEED BOEING787
+       55: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       56: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       57: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       58: FAST-DOWN-TRAVEL-INC-SPEED BOEING777
+       59: RESET-COUNTER BOEING737
+       60: DOWN-TRAVEL-WITH-SPEED BOEING787
+       61: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       62: DOWN-TRAVEL-WITH-SPEED BOEING777
+       63: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       64: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       65: RESET-COUNTER BOEING737
+       66: DOWN-TRAVEL-WITH-SPEED BOEING787
+       67: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       68: DOWN-TRAVEL-WITH-SPEED BOEING777
+       69: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       70: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       71: RESET-COUNTER BOEING737
+       72: DOWN-TRAVEL-WITH-SPEED BOEING787
+       73: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       74: LAND BOEING777
+       75: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       76: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       77: RESET-COUNTER BOEING737
+       78: DOWN-TRAVEL-NO-SPEED BOEING787
+       79: DOWN-TRAVEL-NO-SPEED AIRBUSA330
+       80: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       81: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       82: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       83: RESET-COUNTER BOEING737
+       84: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       85: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       86: SKIP BOEING777
+       87: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+       88: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       89: RESET-COUNTER BOEING737
+       90: DOWN-TRAVEL-WITH-SPEED BOEING787
+       91: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       92: SKIP BOEING777
+       93: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       94: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+       95: RESET-COUNTER BOEING737
+       96: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+       97: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+       98: SKIP BOEING777
+       99: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+      100: FAST-DOWN-TRAVEL-INC-SPEED AIRBUSA330
+      101: RESET-COUNTER BOEING737
+      102: DOWN-TRAVEL-WITH-SPEED BOEING787
+      103: DOWN-TRAVEL-WITH-SPEED AIRBUSA330
+      104: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+      105: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+      106: ACCEPTMIN AIRBUSA320
+      107: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+      108: RESET-COUNTER BOEING737
+      109: DOWN-TRAVEL-WITH-SPEED BOEING787
+      110: LAND AIRBUSA330
+      111: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+      112: ACCEPTMIN AIRBUSA320
+      113: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+      114: FAST-DOWN-TRAVEL-INC-SPEED BOEING787
+      115: RESET-COUNTER BOEING737
+      116: LAND BOEING787
+      117: SKIP AIRBUSA330
+      118: SKIP BOEING777
+      119: ACCEPTMIN AIRBUSA320
+      120: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      121: FLAT-TRAVEL-INCC-SPEED BOEING737
+      122: RESET-COUNTER BOEING737
+      123: SKIP BOEING787
+      124: SKIP AIRBUSA330
+      125: SKIP BOEING777
+      126: DOWN-TRAVEL-NO-SPEED-MINIMUMS AIRBUSA320
+      127: FLAT-TRAVEL-INCC-SPEED BOEING737
+      128: RESET-COUNTER BOEING737
+      129: SKIP BOEING787
+      130: SKIP AIRBUSA330
+      131: SKIP BOEING777
+      132: DOWN-TRAVEL-WITH-SPEED AIRBUSA320
+      133: LAND BOEING737
+      134: RESET-COUNTER BOEING737
+      135: SKIP BOEING787
+      136: SKIP AIRBUSA330
+      137: SKIP BOEING777
+      138: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      139: SKIP BOEING737
+      140: RESET-COUNTER BOEING737
+      141: SKIP BOEING787
+      142: SKIP AIRBUSA330
+      143: SKIP BOEING777
+      144: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      145: SKIP BOEING737
+      146: RESET-COUNTER BOEING737
+      147: SKIP BOEING787
+      148: SKIP AIRBUSA330
+      149: SKIP BOEING777
+      150: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      151: SKIP BOEING737
+      152: RESET-COUNTER BOEING737
+      153: SKIP BOEING787
+      154: SKIP AIRBUSA330
+      155: SKIP BOEING777
+      156: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      157: SKIP BOEING737
+      158: RESET-COUNTER BOEING737
+      159: SKIP BOEING787
+      160: SKIP AIRBUSA330
+      161: SKIP BOEING777
+      162: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      163: SKIP BOEING737
+      164: RESET-COUNTER BOEING737
+      165: SKIP BOEING787
+      166: SKIP AIRBUSA330
+      167: SKIP BOEING777
+      168: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      169: SKIP BOEING737
+      170: RESET-COUNTER BOEING737
+      171: SKIP BOEING787
+      172: SKIP AIRBUSA330
+      173: SKIP BOEING777
+      174: FLAT-TRAVEL-INCC-SPEED AIRBUSA320
+      175: SKIP BOEING737
+      176: RESET-COUNTER BOEING737
+      177: SKIP BOEING787
+      178: SKIP AIRBUSA330
+      179: SKIP BOEING777
+      180: LAND AIRBUSA320
+plan cost: 29.000000
+
+time spent:    0.00 seconds instantiating 70 easy, 20 hard action templates
+               0.00 seconds reachability analysis, yielding 10 facts and 90 actions
+               0.00 seconds creating final representation with 10 relevant facts, 45 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.08 seconds searching, evaluating 1459 states, to a max depth of 6
+               0.08 seconds total time
+

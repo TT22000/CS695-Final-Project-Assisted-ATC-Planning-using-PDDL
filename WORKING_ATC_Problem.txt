@@ -1,0 +1,29 @@
+(define (problem atc-problem)
+(:domain atc)
+
+(:objects
+	Boeing787 AirbusA330 Boeing777 AirbusA320 Boeing737 - plane
+	)
+
+(:init
+	(= (counter Boeing787) 1) (= (reqspeed Boeing787) 150) (= (distance Boeing787) 15000) (= (speed Boeing787) 350) (= (altitude Boeing787) 19000)
+	(= (counter AirbusA330) 2) (= (reqspeed AirbusA330) 155) (= (distance AirbusA330) 12000) (= (speed AirbusA330) 370) (= (altitude AirbusA330) 13000)
+	(= (counter Boeing777) 3) (= (reqspeed Boeing777) 135) (= (distance Boeing777) 11000) (= (speed Boeing777) 312) (= (altitude Boeing777) 17000)
+	(= (counter AirbusA320) 4) (= (reqspeed AirbusA320) 140) (= (distance AirbusA320) 13000) (= (speed AirbusA320) 250) (= (altitude AirbusA320) 9000)
+	(= (counter Boeing737) 5) (= (reqspeed Boeing737) 145) (= (distance Boeing737) 8000) (= (speed Boeing737) 280) (= (altitude Boeing737) 10000)
+	
+	(= (time) 0)
+	(= (counting) 1)
+	(= (counted) 6) 
+	(= (maintain) 8000)
+	(= (minimums) 2000)
+	(= (minimumsplane) 0)
+	(= (clearedplane) 0)
+	(= (minimumsspeed) 180)
+	(= (landed) 0)
+	)
+
+(:goal (and (planelanded Boeing787) (planelanded AirbusA330) (planelanded Boeing777) (planelanded AirbusA320) (planelanded Boeing737)))
+(:metric minimize (time))
+
+)

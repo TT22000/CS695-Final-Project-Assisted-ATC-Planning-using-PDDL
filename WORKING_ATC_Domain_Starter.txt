@@ -1,0 +1,76 @@
+(define
+(domain atc)
+(:requirements :strips :typing :equality :conditional-effects :action-costs)
+(:types plane - object)
+
+(:predicates
+    (planelanded ?p - plane)
+    (goaround ?p - plane)
+  )
+
+(:functions
+  (counter ?p - plane)
+  (reqspeed ?p - plane)
+  (distance ?p - plane)
+  (speed ?p - plane)
+  (altitude ?p - plane)
+  (time)
+  (counting)
+  (counted)
+  (maintain)
+  (minimums)
+  (minimumsplane)
+  (minimumsspeed)
+  (landed)
+  (clearedplane)
+  )
+
+(:action reset-counter
+    :parameters (?p - plane)
+    :precondition(and
+    (= (counting) (counted))
+    )
+    :effect(and
+    (assign (counting) 1)
+    (increase (time) 1)
+    )
+)
+
+(:action skip
+    :parameters (?p - plane)
+    :precondition (and 
+    (planelanded ?p)
+    (= (counting) (counter ?p))
+    )
+    :effect (and
+    (increase (counting) 1)
+    )
+)
+
+(:action land
+  :parameters (?p - plane)
+  :precondition (and
+    (<= (altitude ?p) 500)
+    (= (counting) (counter ?p))
+    (not (planelanded ?p))
+    )
+  :effect (and
+  (planelanded ?p)
+  (increase (counting) 1)
+  )
+)
+
+
+(:action down-travel
+  :parameters (?p - plane)
+  :precondition (and
+    (= (counting) (counter ?p))
+    (not (planelanded ?p))
+    )
+  :effect (and
+    (decrease (altitude ?p) 100)
+    (increase (counting) 1)
+    (decrease (distance ?p) (speed ?p))
+    )
+)
+)
